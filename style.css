@@ -1,3 +1,6 @@
+body {
+    background-color: #eee;
+}
 body, p, h1, h2 {
     margin: 0;
     font-family: "Roboto", sans-serif;
@@ -17,20 +20,66 @@ a {
     font-weight: 300;
     font-size: 13px;
 }
+a, button {
+    transition: 500ms;
+    cursor: pointer;
+}
+
 .blackheader a:hover {
     color: white;
-    transition: 500ms;
 }
+
 .whiteheader {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 14px;
+    background-color: white;
 }
+
 .customer-side {
     display: flex;
     align-items: center;
 }
+
 .whiteheader a {
     margin: 0 12px;
+    color: rgb(65, 65, 65);
+    font-size: 17px;
+}
+
+.whiteheader a:hover {
+    color: #7a7979;
+}
+
+.whiteheader button {
+    background-color: rgb(228, 54, 54);
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+}
+.whiteheader button:hover {
+    background-color: red;
+}
+
+.hero {
+    height: 70vh;
+    background-image: url(city.jpg);
+    background-size: cover;
+}
+
+.news {
+    padding: 32px;
+    background-color: white;
+    margin: -24px 32px 0 32px;
+}
+
+.news h2 {
+    font-weight: 100;
+    text-align: center;
+    border-bottom: 2px solid rgb(242, 207, 7);
+    width: 120px;
+    margin: 0 auto;
+    padding-bottom: 16px;
 }
