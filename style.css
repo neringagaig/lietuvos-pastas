@@ -87,10 +87,11 @@ a, button {
 .cards {
     display: flex;
     justify-items: space-between;
+    flex-wrap: wrap;
 }
 .card {
-    width: 48%;
-    margin: 16px;
+    width: 49%;
+    margin-bottom: 16px;
     border: 1px solid #e3e3e3;
     border-radius: 4px;
     padding-bottom: 16px;
@@ -102,6 +103,41 @@ a, button {
 }
 .card .card-text, .card a {
     padding: 16px;
+}
+.mini {
+    width: 30%;
+    margin: 8px;
+}
+footer {
+    padding: 60px 40px;
+}
+.nav-column ul {
+    padding-left: 13px;
+}
+.footer-navigation {
+    display: flex;
+}
+.nav {
+    width: 25%;
+}
+.nav a {
+    color: #616161;
+    text-decoration: none;
+}
+.nav a:hover {
+    opacity: 0.8;
+}
+.social {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+}
+.social a {
+    margin: 0 20px;
+    color: #616161;
+}
+.social a:hover {
+    opacity: 0.8;
 }
 @media screen and (max-width: 768px) {
     .blackheader {
@@ -126,11 +162,15 @@ a, button {
         padding: 16px 24px;
         font-size: 18px;
     }
-    .cards {
-        flex-direction: column;
-    }
+    
     .card {
         width: 100%;
         margin: 8px 0;
+    }
+    .mini {
+        width: 49%;
+    }
+    .footer-navigation {
+        display: none;
     }
 }
